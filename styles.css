@@ -1,3 +1,10 @@
+*
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    font-size: 20px;
+}
 .button {
     border: none;
     color: white;
@@ -8,4 +15,58 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+/***** Header *****/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua ;
+    align-items: center;
+    height: 60px;
+}
+ul
+{
+    background-color: aquamarine;
+}
+li{
+    display: inline-block;
+    padding: .5em 1em;
+    margin: 0 .5em;
+    background-color: brown;
+    color:white;
+    border-radius: 10px;
+    font-size: .75rem;
+}
+.logo
+{
+    font-size: 1.75rem;
+    background-color: azure;
+    margin-left:1em;
+    white-space: nowrap;
+}
+#search
+{
+    border-radius: 10px;
+    height:45px;
+    width: 50%;
+    min-width:300px;
+    margin:auto;
+    border: none;
+    transition: all .7s;
+    font-size: 1rem;
+    text-align: center;
+    padding: .001em;
+    background-color: whitesmoke;
+    initial-value: none;
+}
+#search:focus
+{
+    width: 60%;
+    background-color: aliceblue;
+}
+#search:hover{
+    background-color: aliceblue;
+    border: 2px solid rgb(2, 14, 26);
 }
