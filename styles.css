@@ -78,11 +78,40 @@ li{
     border: 2px solid rgb(2, 14, 26);
 }
 
+/*----- Sections -----*/
+.sections
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 1000px;
+    margin-top: 1em;
+}
+
+/***** Left *****/
+
+.left , .right
+{
+    background-color: chartreuse;
+    width:14%;
+    border-radius: 10px;
+}
+
 /***** Main *****/
 .main
 {
     width:70%;
-    height:800px;
     background-color: aqua;
-    
+    border-radius: 10px;
+}
+/***** Right *****/
+.right
+{
+    background-color: blueviolet;
+}
+.top-donos
+{
+}
+.groups
+{
+    background-color: aliceblue;
 }
