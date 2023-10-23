@@ -4,6 +4,8 @@
 }
 :root{
     font-size: 20px;
+    --primary-color: rgb(198,161,207);
+    --secondary-color:whitesmoke;
 }
 .button {
     border: none;
@@ -17,34 +19,39 @@
     cursor: pointer;
 }
 
+body{
+    margin:0;
+}
+
 /***** Header *****/
 header
 {
     display: flex;
     justify-content: space-between;
-    background-color: aqua ;
+    background-color: var(--primary-color) ;
     align-items: center;
     height: 60px;
 }
 ul
 {
-    background-color: aquamarine;
+    width:25%;
+    display:flex;
+    justify-content: right;
+    margin-right: 1em;
 }
 li{
     display: inline-block;
     padding: .5em 1em;
     margin: 0 .5em;
-    background-color: brown;
-    color:white;
+    background-color: var(--secondary-color);
+    color:black;
     border-radius: 10px;
     font-size: .75rem;
 }
 .logo
 {
-    font-size: 1.75rem;
-    background-color: azure;
     margin-left:1em;
-    white-space: nowrap;
+    width:25%;
 }
 #search
 {
@@ -69,4 +76,13 @@ li{
 #search:hover{
     background-color: aliceblue;
     border: 2px solid rgb(2, 14, 26);
+}
+
+/***** Main *****/
+.main
+{
+    width:70%;
+    height:800px;
+    background-color: aqua;
+    
 }
