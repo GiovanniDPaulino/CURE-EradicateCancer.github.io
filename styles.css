@@ -5,7 +5,8 @@
 :root{
     font-size: 20px;
     --primary-color: rgb(198,161,207);
-    --secondary-color:whitesmoke;
+    --secondary-color:rgb(227, 226, 230);
+    --background-color:whitesmoke;
 }
 .button {
     border: none;
@@ -21,6 +22,7 @@
 
 body{
     margin:0;
+    background-color: var(--background-color);
 }
 
 /***** Header *****/
@@ -55,8 +57,8 @@ li{
 }
 #search
 {
-    border-radius: 10px;
-    height:45px;
+    border-radius: 5px;
+    height:35px;
     width: 50%;
     min-width:300px;
     margin:auto;
@@ -65,16 +67,13 @@ li{
     font-size: 1rem;
     text-align: center;
     padding: .001em;
-    background-color: whitesmoke;
+    background-color: var(--secondary-color);
     initial-value: none;
 }
 #search:focus
 {
-    width: 60%;
-    background-color: aliceblue;
 }
 #search:hover{
-    background-color: aliceblue;
     border: 2px solid rgb(2, 14, 26);
 }
 
@@ -83,52 +82,76 @@ li{
 {
     display: flex;
     justify-content: space-evenly;
-    height: 1000px;
+    height:1000px;
     margin-top: 1em;
     --main-width: 60%;
+    
 }
+
+.left, .main{
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.left , .right
+{
+    width:calc(((95% - var(--main-width))/2));
+}
+.left, .groups, .top-donos, .main
+{
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.19), 0 6px 20px 0 rgba(182, 182, 182, 0.19);
+    transition: all .5s;
+}
+.left:hover, .groups:hover, .top-donos:hover, .main:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(134, 134, 134, 0.19), 0 6px 20px 0 rgba(134, 134, 134, 0.19);   
+}
+
 
 /***** Left *****/
 
-.left , .right
+.left{
+    
+}
+.forums
 {
-    background-color: chartreuse;
-    width:calc(((95% - var(--main-width))/2));
-    border-radius: 10px;
+    width:100%;
+    height:100%;
+    border-radius:inherit;
 }
 
 /***** Main *****/
 .main
 {
     width:var(--main-width);
-    background-color: aqua;
-    border-radius: 10px;
+}
+.main-container{
+    margin:.5em;
+    width:calc(100%-1em);
+    height:calc(100% - 1em);
 }
 /***** Right *****/
 .right
 {
-    background-color: blueviolet;
-    padding:.5em;
-}
-.right-container
-{
-    height:100%;
     display:flex;
     flex-direction: column;
     --donos-height:30%;
 }
+.right-container
+{
+    height:100%;
+
+}
 .top-donos, .groups{
-    border-radius:5px;
+    border-radius:10px;
+    background-color: var(--secondary-color);
 }
 .top-donos
 {
     width:100%;
     height:var(--donos-height);
-    background-color: aqua;
 }
 .groups
 {
     margin:.5em 0 0 0;
-    background-color: aliceblue;
-    height: calc(100% - var(--donos-height));
+    height: calc(100% - var(--donos-height) - .5em);
 }
