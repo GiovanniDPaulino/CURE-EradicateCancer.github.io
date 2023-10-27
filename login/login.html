@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in | CURE</title>
 </head>
+<header>
+    <a href="../index.html"><h1 class="logo">Cure</h1></a>
+    <link rel="stylesheet" href="loginStyles.css">
+</header>
 <body>
-    Hello world
+    <div class="login">
+    <h1>Log In</h1>
+</div>
+<section class="main">
+    <form action="POST">
+    <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" required>
+    </fieldset>
+    <button type="submit">Submit</button>
+</form>
+</section>
 </body>
 </html>
