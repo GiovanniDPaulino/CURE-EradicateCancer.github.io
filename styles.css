@@ -70,9 +70,6 @@ li{
     background-color: var(--secondary-color);
     initial-value: none;
 }
-#search:focus
-{
-}
 #search:hover{
     border: 2px solid rgb(2, 14, 26);
 }
