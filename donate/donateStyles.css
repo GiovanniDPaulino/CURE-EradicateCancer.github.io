@@ -1,0 +1,10 @@
+*
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    font-size: 20px;
+    --primary-color: rgb(198,161,207);
+    --secondary-color:rgb(227, 226, 230);
+    --background-color:whitesmoke;
+}
