@@ -8,3 +8,46 @@
     --secondary-color:rgb(227, 226, 230);
     --background-color:whitesmoke;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*** Header ***/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    background-color: aqua;
+}
+
+.logo
+{
+    margin-left:1em;
+    width:25%;
+    font-size: 2rem;
+}
+
+/**** Body ****/
+
+body{
+    margin:0;
+    background-color: var(--background-color);
+    --left-container-width: 60%;
+    display: flex;
+}
+
+.left-container
+{
+    background-color: aqua;
+    width:var(--left-container-width);
+    height:1000px;
+}
+.right-container
+{
+    background-color: rgb(240, 255, 127);
+    width: calc(100% - var(--left-container-width));
+    height: 1000px;
+}
