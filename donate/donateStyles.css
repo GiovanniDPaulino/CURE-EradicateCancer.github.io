@@ -20,12 +20,12 @@ header
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    background-color: aqua;
+    background-color: rgb(0, 255, 4);
 }
 
 .logo
 {
-    margin-left:1em;
+    margin:.25em 1em ;
     width:25%;
     font-size: 2rem;
 }
@@ -36,15 +36,36 @@ body{
     margin:0;
     background-color: var(--background-color);
     --left-container-width: 60%;
+    
+}
+main
+{
     display: flex;
 }
 
+/***** left *****/
 .left-container
 {
     background-color: aqua;
     width:var(--left-container-width);
     height:1000px;
 }
+.donate, .anonymous-donation
+{
+    --donate-height: 48%;
+    height: var(--donate-height);
+    margin: calc((50% - var(--donate-height)) / 2) auto;
+    width: 98%;
+}
+.donate
+{
+    background-color: beige;
+}
+.anonymous-donation
+{
+    background-color: brown;
+}
+/***** right *****/
 .right-container
 {
     background-color: rgb(240, 255, 127);
