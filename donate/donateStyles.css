@@ -36,7 +36,7 @@ body{
     margin:0;
     background-color: var(--background-color);
     --left-container-width: 60%;
-    
+    --left-container-height:1000px;
 }
 main
 {
@@ -48,21 +48,23 @@ main
 {
     background-color: aqua;
     width:var(--left-container-width);
-    height:1000px;
+    height: var(--left-container-height);
+    --donate-height: 48%;
+    --donate-margin: calc((50% - var(--donate-height)) / 2);
+
 }
 .donate, .anonymous-donation
-{
-    --donate-height: 48%;
-    height: var(--donate-height);
-    margin: calc((50% - var(--donate-height)) / 2) auto;
-    width: 98%;
+{   
+    margin: var(--donate-margin);
 }
 .donate
 {
+    height: var(--donate-height);
     background-color: beige;
 }
 .anonymous-donation
 {
+    height:calc(51% - var(--donate-margin));
     background-color: brown;
 }
 /***** right *****/
