@@ -53,20 +53,6 @@ main
     --donate-margin: calc((50% - var(--donate-height)) / 2);
 
 }
-.donate, .anonymous-donation
-{   
-    margin: var(--donate-margin);
-}
-.donate
-{
-    height: var(--donate-height);
-    background-color: beige;
-}
-.anonymous-donation
-{
-    height:calc(51% - var(--donate-margin));
-    background-color: brown;
-}
 /***** right *****/
 .right-container
 {
