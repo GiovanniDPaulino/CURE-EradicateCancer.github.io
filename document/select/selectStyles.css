@@ -40,23 +40,35 @@ body{
 }
 main
 {
-    display: flex;
+    display:contents;
 }
 
-/***** left *****/
-.left-container
+/***** outside *****/
+.outside
 {
-    background-color: aqua;
-    width:var(--left-container-width);
-    height: var(--left-container-height);
-    --donate-height: 48%;
-    --donate-margin: calc((50% - var(--donate-height)) / 2);
+    background-color: rgb(47, 128, 17);
+    padding-left: 20%;
 
 }
-/***** right *****/
-.right-container
+/***** inside *****/
+.document-container
 {
-    background-color: rgb(240, 255, 127);
-    width: calc(100% - var(--left-container-width));
+    background-color: rgb(126, 144, 249);
+    width: 50%;
+    position:sticky;
+    left:25%;
     height: 1000px;
+    padding-top: 30px;
+}
+
+.icons
+{
+    list-style:none;
+}
+
+.icon
+{
+    border: 3px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
