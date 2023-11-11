@@ -1,0 +1,50 @@
+/* Style the container for the settings */
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the heading for the settings */
+.settings-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the form for the settings */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the labels for the form inputs */
+.settings-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style the inputs for the form */
+.settings-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Style the submit button for the form */
+.settings-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+.settings-submit:hover {
+  background-color: #0069d9;
+}
