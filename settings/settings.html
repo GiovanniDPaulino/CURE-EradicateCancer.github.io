@@ -1,50 +1,56 @@
-<h1>Settings</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" href="settingStyles.css">
+</head>
+<body>
+  <h1>Settings</h1>
+  <form>
+    <h2>Appearance</h2>
+    <label for="theme-color">Theme Color:</label>
+    <select id="theme-color" name="theme-color">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+    <br>
+    <label for="text-size">Text Size:</label>
+    <select id="text-size" name="text-size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
 
+    <h2>Accessibility</h2>
+    <label for="high-contrast-mode">High Contrast Mode:</label>
+    <input type="checkbox" id="high-contrast-mode" name="high-contrast-mode">
+    <br>
+    <label for="text-to-speech">Text-to-Speech:</label>
+    <input type="checkbox" id="text-to-speech" name="text-to-speech">
+
+    <h2>Document Editor</h2>
+    <label for="default-editor">Default Editor:</label>
+    <select id="default-editor" name="default-editor">
+      <option value="text-editor">Text Editor</option>
+      <option value="visual-editor">Visual Editor</option>
+    </select>
+
+    <h2>Account</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <h2>Preferences</h2>
+    <label for="email-notifications">Email Notifications:</label>
+    <input type="checkbox" id="email-notifications" name="email-notifications">
+    <br>
+    <label for="newsletter-subscription">Newsletter Subscription:</label>
+    <input type="checkbox" id="newsletter-subscription" name="newsletter-subscription">
+
+    <br><br>
+    <input type="submit" value="Save Changes">
+  </form>
 </body>
 </html>
-<form>
-  <h2>Appearance</h2>
-  <label for="theme-color">Theme Color:</label>
-  <select id="theme-color" name="theme-color">
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-  </select>
-  <br>
-  <label for="text-size">Text Size:</label>
-  <select id="text-size" name="text-size">
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-  </select>
-  
-  <h2>Accessibility</h2>
-  <label for="high-contrast-mode">High Contrast Mode:</label>
-  <input type="checkbox" id="high-contrast-mode" name="high-contrast-mode">
-  <br>
-  <label for="text-to-speech">Text-to-Speech:</label>
-  <input type="checkbox" id="text-to-speech" name="text-to-speech">
-  
-  <h2>Document Editor</h2>
-  <label for="default-editor">Default Editor:</label>
-  <select id="default-editor" name="default-editor">
-    <option value="text-editor">Text Editor</option>
-    <option value="visual-editor">Visual Editor</option>
-  </select>
-  
-  <h2>Account</h2>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
-  <br>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  
-  <h2>Preferences</h2>
-  <label for="email-notifications">Email Notifications:</label>
-  <input type="checkbox" id="email-notifications" name="email-notifications">
-  <br>
-  <label for="newsletter-subscription">Newsletter Subscription:</label>
-  <input type="checkbox" id="newsletter-subscription" name="newsletter-subscription">
-  
-  <br><br>
-  <input type="submit" value="Save Changes">
-</form>
