@@ -43,34 +43,47 @@ main
     display: flex;
 }
 
+.donate, .anonymous-donation, .donation-requests
+{   
+    margin: var(--donate-margin);
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.19), 0 6px 20px 0 rgba(182, 182, 182, 0.19);
+    transition: all .5s;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.donate:hover, .anonymous-donation:hover, .donation-requests:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(134, 134, 134, 0.19), 0 6px 20px 0 rgba(134, 134, 134, 0.19);   
+}
+
 /***** left *****/
 .left-container
 {
-    background-color: aqua;
     width:var(--left-container-width);
     height: var(--left-container-height);
     --donate-height: 48%;
     --donate-margin: calc((50% - var(--donate-height)) / 2);
 
 }
-.donate, .anonymous-donation
-{   
-    margin: var(--donate-margin);
-}
+
 .donate
 {
     height: var(--donate-height);
-    background-color: beige;
 }
 .anonymous-donation
 {
     height:calc(51% - var(--donate-margin));
-    background-color: brown;
 }
 /***** right *****/
 .right-container
 {
-    background-color: rgb(240, 255, 127);
     width: calc(100% - var(--left-container-width));
     height: 1000px;
+    --donate-height: 99%;
+    --donate-margin: calc((101% - var(--donate-height)) / 2);
+}
+.donation-requests
+{
+    margin: var(--donate-margin);
+    height: var(--donate-height);
 }
