@@ -1,0 +1,50 @@
+*
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    font-size: 20px;
+    --primary-color: rgb(198,161,207);
+    --secondary-color:rgb(227, 226, 230);
+    --background-color:whitesmoke;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+body{
+    margin:0;
+    background-color: var(--background-color);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/***** Header *****/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color) ;
+    align-items: center;
+    height: 60px;
+}
+/***** Body *****/
+.main h1{
+    font-size: 3rem;
+}
+.statement
+{
+    font-size: 1.25rem;
+    width:70%;
+    margin: auto;
+}
