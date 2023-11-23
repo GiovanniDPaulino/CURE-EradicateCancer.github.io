@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CURE: Eradicate Cancer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <header>
     <h1 class="logo">CURE</h1>
-    <input type="search" id="search" placeholder="Search Articles" class="searchbar">
+    <form action="article/search.html" method="get">
+    <input type="search" id="search" placeholder="Search Articles" class="searchbar" >
+</form>
     <!--
         When linking to other pages, add this link before directory:
 
@@ -21,14 +24,15 @@
     <li><a href="donate/donate.html">Donate</a></li>
     <li>Solutions</li>
     <li><a href="login/login.html">Log in</a></li>
-    <li>About Us</li>
+    <li><a href="/about_us/about-us.html">About Us</a></li>
     </ul>
 </header>
 <body>
     <div class="sections">
         <section class="left">
             <div class="forums">
-                Forums
+                Forums: <br>
+                List of curated forums, forums subscribed to will be a top
             </div>
         </section>
         <section class="main">
