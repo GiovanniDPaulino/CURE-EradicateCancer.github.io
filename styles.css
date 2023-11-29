@@ -70,6 +70,7 @@ li{
     transition: all .7s;
     font-size: 1rem;
     text-align: center;
+    margin-right: 15rem;
     padding: .001em;
     background-color: var(--secondary-color);
     initial-value: none;
