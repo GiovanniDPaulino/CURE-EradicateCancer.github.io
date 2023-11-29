@@ -110,14 +110,30 @@ li{
 
 /***** Left *****/
 
-.left{
-    
-}
 .forums
 {
     width:100%;
     height:100%;
     border-radius:inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.forums a 
+{
+    padding: .5em .5em;
+    background-color: var(--primary-color);
+    color:black;
+    border-radius: 10px;
+    font-size: .75rem;
+    margin: 1em auto;
+    text-align: center;
+    width:60%;
+}
+
+.text
+{
+    margin: 1em auto;
 }
 
 /***** Main *****/
